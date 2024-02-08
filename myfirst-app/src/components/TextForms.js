@@ -9,19 +9,22 @@ export default function TextForms(props) {
         console.log("UpperCase was clicked" + text)
         let newText = text.toUpperCase()
         setText(newText)
-        props.showAlert("Converted to upperCase", "success")
+        //commenting below line of code due to bug
+        //props.showAlert("Converted to upperCase", "success")
     }
     const handleLocClick= ()=>{
         console.log("LowerCase was clicked" + text)
         let newText = text.toLowerCase()
         setText(newText)
-        props.showAlert("Converted to upperCase", "success")
+        //commenting below line of code due to bug
+        //props.showAlert("Converted to upperCase", "success")
     }
 
     const handleClearClick= () =>{
         let clearText = ' '
         setText(clearText)
-        props.showAlert("Converted to upperCase", "success")
+        //commenting below line of code due to bug
+        //props.showAlert("Converted to upperCase", "success")
     }
 
     const handlerOnChange =(event)=>{
